@@ -28,7 +28,7 @@ if(num1 > num2){
 
 let num1 = Number(prompt("Enter first number"));
 let num2 = Number(prompt("Enter second number"));
-let maxValue = num1 > num2 ? alert("First number is the max value") : alert("Second number is the max value"); 
+num1 > num2 ? alert("First number is the max value") : alert("Second number is the max value"); 
 
 /*
 4. Write a program that asks the user for the house name and check the following conditions:
@@ -134,24 +134,23 @@ if(marks > 100){
 }
 
 
-// let marks = Number(prompt("Enter your marks"));
-// switch(marks){
-//   case marks > 100:
-//     alert("Marks can't be greater than 100 ");
-//     break;
-//   case marks > 80 && marks <= 100:
-//     alert("Grade A");
-//     break;
-//   case marks > 50 && marks <= 80:
-//     alert("Grade B");
-//     break;
-//   case marks > 30 && marks <= 50:
-//     alert("Grade C");
-//     break;
-//   case marks >= 0 && marks <= 30:
-//     alert("Grade D");
-//     break;
-// }
+let marks = Number(prompt("Enter your marks"));
+switch(true){
+  case marks > 100:
+    alert("Marks can't be greater than 100 ");
+    break;
+  case marks > 80 && marks < 100:
+    alert("Grade A");
+    break;
+  case marks > 50 && marks < 80:
+    alert("Grade B");
+    break;
+  case marks > 30 && marks < 50:
+    alert("Grade C");
+    break;
+  default:
+    alert("Grade D");
+}
 
 
 
